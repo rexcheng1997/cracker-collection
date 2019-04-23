@@ -1,2 +1,2 @@
-# cracker-collection
-Collection of password crackers for various file type 
+# Cracker Collection
+Collection of password crackers for various file types

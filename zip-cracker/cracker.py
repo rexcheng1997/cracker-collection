@@ -1,8 +1,8 @@
 """
-    python3 - Zip File Cracker Source
+    python 3 - Zip File Cracker Source
 """
 
-__author_ = "rexcheng1997"
+__author__ = "rexcheng1997"
 
 
 import os, zipfile

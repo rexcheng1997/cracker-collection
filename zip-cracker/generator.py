@@ -20,7 +20,7 @@ def generator(_plen, _characters):
     perm = []
     for i in range(_plen):
         perm.append(0)
-    walk = range(1, len(perm))
+    walk = list(range(1, len(perm)))
     walk.reverse()
     while perm[0] < len(_characters):
         pwd = reduce(lambda x, y: x + y,

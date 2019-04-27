@@ -1,0 +1,12 @@
+Source: zcracker
+Section: devel
+Priority: optional
+Maintainer: rexcheng1997 <rexcheng@umich.edu>
+Build-Depends: debhelper (>= 9)
+
+Package: zcracker
+Architecture: all
+Depends: python3.6
+Description: password cracker for zipped files
+ zcracker package in Python 3.7
+ Crack password-protected zipped files.

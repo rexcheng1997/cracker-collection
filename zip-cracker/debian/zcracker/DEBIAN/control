@@ -1,0 +1,11 @@
+Package: zcracker
+Version: 1.0.0-1
+Architecture: all
+Maintainer: rexcheng1997 <rexcheng@umich.edu>
+Installed-Size: 14
+Depends: python3.6
+Section: devel
+Priority: optional
+Description: password cracker for zipped files
+ zcracker package in Python 3.7
+ Crack password-protected zipped files.

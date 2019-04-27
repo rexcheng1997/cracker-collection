@@ -12,7 +12,7 @@ Collection of password crackers for various file types
 
 Password cracker for password-protected zipped files. ([ver. 1.0.0-1](#zip-file-cracker))
 
-### Requirements:
+#### Requirements:
 
 * Ubuntu 18.04
 * Python 3
@@ -20,12 +20,14 @@ Password cracker for password-protected zipped files. ([ver. 1.0.0-1](#zip-file-
 * debhelper
 * gdebi
 
-### Building and Installation:
+#### Building and Installation:
 
-1. To install the cracker, zcracker package, on your machine, first clone the repo by running `git clone` in your terminal.
+1. To install the cracker, zcracker package, on your machine, first clone the repo by running `git clone link/to/this/repo` in your terminal.
 
 2. Change to the directory just cloned by running `cd zip-cracker`. Next, from that directory, run the following command to build the package:
+
     `$ dpkg-buildpackage -b`
+
     **Note: root permission needed.**
 
     *Further issues about building failure will be listed here.*
@@ -33,10 +35,12 @@ Password cracker for password-protected zipped files. ([ver. 1.0.0-1](#zip-file-
     After successfully building the package, you should see some `.deb`, `.changes`, and `.buildinfo` files in the *parent* directory. (Don't change directory at this time!)
 
 3. Then run the following command to install the built package:
+
     `$ sudo gdebi -n ../zcracker_1.0.0-1_all.deb`
+    
     Up to now, zcracker should be successfully installed on your machine.
 
-### Usage & Examples:
+#### Usage & Examples:
 
 For usage, run `zcracker -h` for more information.
 

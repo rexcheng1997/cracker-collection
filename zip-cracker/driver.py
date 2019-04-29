@@ -26,6 +26,8 @@ parser.add_argument("-d", "--digits", help="include digits in password cracking"
 
 parser.add_argument("-s", "--specials", help="include special characters in password cracking", action="store_true")
 
+parser.add_argument("-w", "--wordlist", type=str, help="use a password list instead of brute forcing")
+
 parser.add_argument("-p", "--print", help="print the password on the screen instead of writing it to a file", action="store_true")
 
 parser.add_argument("-f", "--force", help="[warning] use all computation resources", action="store_true")
@@ -45,4 +47,4 @@ if args.specials:
 if not args.force:
     cpu = int(cpu / 2)
 
-cracker(args.length, characters, args.input, cpu, args.print)
+cracker(args.length, characters, args.input, cpu, args.wordlist, args.print)

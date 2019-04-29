@@ -47,7 +47,7 @@ def poolcontext(*args, **kwargs):
     except KeyboardInterrupt:
         raise GeneratorExit
 
-def cracker(_plen, _characters, _zfile, _cpu, _pscreen):
+def cracker(_plen, _characters, _zfile, _cpu, _wl, _pscreen):
     '''
         Attributes:
 
@@ -55,15 +55,25 @@ def cracker(_plen, _characters, _zfile, _cpu, _pscreen):
             - _characters: characters included in the passwords
             - _zfile: name of the zipped file
             - _cpu: number of cpu cores to use
+            - _wl: list of passwords used
             - _pscreen: print the password to stdout on the screen if True
     '''
     currDir = os.path.abspath('.')
     zfile = os.path.join(currDir, _zfile)
+    pwdList = []
     try:
-        pwdList = generator(_plen, _characters)
+        if _wl:
+            with open(os.path.join(currDir, _wl), 'r') as f:
+                lines = f.read()
+                pwdList = lines.split('\n')[:-1]
+        else:
+            pwdList = generator(_plen, _characters)
     except AttributeError:
         print("Need to specify the characters included in the password!")
         exit(1)
+    except IOError:
+        print("No such file called " + _wl + " under the current directory!")
+        exit(2)
     try:
         with poolcontext(processes=_cpu) as p:
             p.map(partial(cracker_core, _zfile=zfile, _pscreen=_pscreen), pwdList)

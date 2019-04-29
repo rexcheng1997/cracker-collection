@@ -8,5 +8,5 @@ Package: zcracker
 Architecture: all
 Depends: python3.6
 Description: password cracker for zipped files
- zcracker package in Python 3.7
+ zcracker package in Python 3.6
  Crack password-protected zipped files.

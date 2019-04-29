@@ -1,3 +1,7 @@
 zcracker (1.0.0-1) stretch; urgency=medium
   * Initial packaging work with dpkg-buildpackage.
  -- rexcheng1997 <rexcheng@umich.edu>  Fri, 26 Apr 2019 15:53:31 -0400
+
+zcracker (2.0.0-1) stretch; urgency=medium
+  * Add dictionary cracking feature. Support input password list file.
+ -- rexcheng1997 <rexcheng@umich.edu>  Mon, 29 Apr 2019 14:16:07 -0400

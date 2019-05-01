@@ -39,10 +39,10 @@ Password cracker for password-protected zipped files. ([ver. 2.0.0-1](#zip-file-
 
 #### Running from Source:
 
-See **README.md** in *zip-cracker* folder for details.
+See [README.md](https://github.com/rexcheng1997/cracker-collection/blob/master/zip-cracker/README.md) in *zip-cracker* folder for details.
 
 #### Usage & Examples:
 
 For usage, run `zcracker -h` for more information. If you only see `Finished.` printed on the screen, this means that the program terminates without finding the correct password in the user-specified range.
 
-*Examples* see **README.md** in *zip-cracker* folder.
+*Examples* see [README.md](https://github.com/rexcheng1997/cracker-collection/blob/master/zip-cracker/README.md) in *zip-cracker* folder.

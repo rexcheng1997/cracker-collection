@@ -4,6 +4,7 @@ Collection of password crackers for various file types
 ## Table of Contents
 
 * [Zip file cracker](#zip-file-cracker)
+* [Pdf file cracker](#pdf-file-cracker)
 * [More to be added...](#table-of-contents)
 
 ---
@@ -46,3 +47,19 @@ See [README.md](https://github.com/rexcheng1997/cracker-collection/blob/master/z
 For usage, run `zcracker -h` for more information. If you only see `Finished.` printed on the screen, this means that the program terminates without finding the correct password in the user-specified range.
 
 *Examples* see [README.md](https://github.com/rexcheng1997/cracker-collection/blob/master/zip-cracker/README.md) in *zip-cracker* folder.
+
+---
+
+## Pdf File Cracker
+
+Password cracker for password-protected (secured) pdf files. ([ver. 1.0.0-1](#pdf-file-cracker))  
+*Not compatible with some encryption protection, i.e. restrict editing and open password.*
+
+#### Requirements:
+
+* Ubuntu 18.04
+* Python 3
+* PyPDF2 (install by `pip3 install PyPDF2`)
+* dpkg
+* debhelper
+* gdebi
